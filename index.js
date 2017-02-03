@@ -4,7 +4,8 @@ var buble = require('./buble')
 var options = {
   transforms: {
     modules: false,
-    stripWith: true // this is a custom feature for stripping with from Vue render functions.
+    stripWith: true, // custom feature for stripping with from Vue render functions.
+    stripWithFunctional: false // custom feature ensures with context targets functional render
   }
 }
 
